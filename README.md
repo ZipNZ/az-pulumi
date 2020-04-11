@@ -23,7 +23,7 @@ docker build .
 ## Example of usage
 
 Here's an example dockerfile that uses the image
-```
+```dockerfile
 FROM scottam/az-pulumi:latest
 
 COPY . .

@@ -29,7 +29,8 @@ FROM scottam/az-pulumi:latest
 
 COPY . .
 
-CMD "pulumi version"
+CMD "az login --service-principal -u "$ARM_CLIENT_ID" --password "$ARM_CLIENT_SECRET" --tenant "$ARM_TENANT_ID" && \
+ pulumi version"
 ```
 
 ## Exploring the contents of the image

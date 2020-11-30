@@ -6,7 +6,7 @@ ENV PULUMI_VERSION=2.9.2
 
 #Install Pulumi
 RUN apk update && \
-    apk add --update jq nodejs npm g++ && \
+    apk add --update jq nodejs npm g++ gnupg && \
     #include libc6-compat as a dep https://github.com/pulumi/pulumi/issues/1986
     apk add libc6-compat && \
     curl -fsSL https://get.pulumi.com | bash -s -- --version $PULUMI_VERSION && \

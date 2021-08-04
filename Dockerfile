@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/azure-cli:latest
 
 LABEL maintainer="Scott Murray <scottam.coder@gmail.com>"
 
-ENV PULUMI_VERSION=2.9.2
+ENV PULUMI_VERSION=3.9.1
 
 #Install Pulumi
 RUN apk update && \

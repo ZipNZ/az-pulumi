@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/azure-cli:latest
+FROM mcr.microsoft.com/azure-cli:2.54.0
 
 ENV PULUMI_VERSION=3.94.2
 
